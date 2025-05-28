@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tools Wonder - Your All-in-One Digital Toolkit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2a5ee5;
+            --secondary: #f8f9fa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            padding: 1rem 5%;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 6rem 5%;
+            background: linear-gradient(45deg, #f0f5ff, #ffffff);
+        }
+
+        /* Search Bar */
+        .search-bar {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+
+        /* Tool Sections */
+        .section {
+            padding: 4rem 5%;
+        }
+
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .tool-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Footer */
+        footer {
+            background: #0a1833;
+            color: white;
+            padding: 3rem 5%;
+            text-align: center;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            nav { display: none; }
+            .hero h1 { font-size: 1.8rem; }
+            .tools-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">XpertOCR</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#tools">Tools</a>
+            <a href="#contact">Contact</a>
+            <a href="mailto:xpertocr@gmail.com">xpertocr@gmail.com</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Your Daily Tools, All in One Place</h1>
+        <p class="subheadline">Convert, calculate, compress, and simplify your everyday tasks — fast and free.</p>
+        <button class="cta-btn">Explore Tools</button>
+        <div class="illustration">
+            <!-- Add SVG/icons here -->
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search a tool..." class="search-input">
+        </div>
+    </section>
+
+    <!-- Tool Sections -->
+    <section class="section">
+        <h2><i class="fas fa-image"></i> Image Tools</h2>
+        <p>Transform and optimize your images</p>
+        <div class="tools-grid">
+            <!-- Repeat for each tool -->
+            <div class="tool-card">
+                <i class="fas fa-file-image"></i>
+                <h3>Image Converter</h3>
+                <p>Convert between JPG, PNG, and WebP formats</p>
+                <button class="tool-btn">Use Tool</button>
+            </div>
+            <!-- Add other tool cards -->
+        </div>
+    </section>
+
+    <!-- Repeat sections for other categories -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">XpertOCR</div>
+            <p>Simplifying your digital life</p>
+            <div class="contact">xpertocr.com</div>
+            <div class="links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
